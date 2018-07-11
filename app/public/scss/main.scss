@@ -120,7 +120,28 @@
 	-moz-box-shadow: -4px -2px 6px 0px rgba(189,189,189,1);
 	box-shadow: -4px -2px 6px 0px rgba(189,189,189,1);
 
+	&.actuality {
+		padding: 10px;
+    border-bottom-right-radius: 20%;
 
+		.card-body {
+	    background-image: url(../images/card-title.png);
+	    background-repeat: no-repeat;
+	    background-size: 100%;
+		}
+		.card-title {
+			font-style: italic;
+		}
+		.card-text {
+			text-align: center;
+		}
+	}
+	&.offer {
+		padding: 0px;
+		text-align: center;
+		border-bottom-right-radius: 20%;
+
+	}
 }
 
 
