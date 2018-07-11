@@ -65,12 +65,26 @@
 	    display: table-cell;
 	    text-align: center;
 
+	    @media screen and (max-width: 768px) {
+		    display: inline;
+			}
+
 	    a {
 		    display: block;
 		    padding: 10px;
 		    color: white;
 	    }
 		}
+	}
+	&--slider {
+		max-height: 250px;
+    overflow: hidden;
+    margin: 20px 0px;
+    padding: 0px;
+
+    img {
+    	width: 100%;
+    }
 	}
 }
 

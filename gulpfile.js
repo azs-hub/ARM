@@ -103,7 +103,7 @@ gulp.task('es6', function(){
 });
 
 gulp.task("css", function () {
-    return gulp.src($app + "/public/css/**/*.css")
+    return gulp.src($app + "/public/css/**/*")
         .pipe(gulp.dest($dist + "/css"));
 });
 
