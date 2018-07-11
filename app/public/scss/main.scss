@@ -1,3 +1,12 @@
+.section__title {
+	text-align: center;
+	margin: 40px 0;
+	hr {
+		width: 100px;
+    border-top: 2px solid rgba(0,0,0,1);
+	}
+}
+
 /*
 ** NAVIGATION
 */
@@ -88,6 +97,9 @@
 	}
 }
 
+/*
+** DAILYINFO
+*/
 .dailyinfo {
 	background-color: #daeafe;
 	padding: 10px;
@@ -103,6 +115,13 @@
 }
 
 
+.card {
+	-webkit-box-shadow: -4px -2px 6px 0px rgba(189,189,189,1);
+	-moz-box-shadow: -4px -2px 6px 0px rgba(189,189,189,1);
+	box-shadow: -4px -2px 6px 0px rgba(189,189,189,1);
+
+
+}
 
 
 
