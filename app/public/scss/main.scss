@@ -1,0 +1,317 @@
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+body.noScroll { /* ...or body.dialogShowing */
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+strong {
+	font-weight: 900;
+}
+
+.container__section {
+	width: 100%;
+	height: 800px;
+}
+
+#welcome {
+
+	.welcome__container--bg {
+	    position: absolute;
+	    width: 0%;
+	    height: 100%;
+	    top: 0;
+	    left: 0px;
+
+	    &.y1 {
+	    	background-color: #FFD94A;
+	    }
+	    &.y2 {
+	    	background-color: #FFD01F;
+	    }
+	    &.y3 {
+	    	background-color: #FFCA00;
+	    }
+	    &.white {
+	    	background-color: #fff;
+	    }
+	}
+
+	h1 {
+		font-family: "Times New Roman", Times, serif;
+	    text-align: center;
+	    width: 80%;
+	    position: absolute;
+	    bottom: 40px;
+	    left: 10%;
+	    /*top: 40%;*/
+	    margin: 0 auto;
+	    color: #000;
+	    overflow: hidden;
+	    height: 0px;
+
+	    &:before, &:after {
+	    	content: 'Welcome to Codeintrip.';
+	    	position: absolute;
+	    	left: 0;
+	    	top: 0;
+	    	right: 0;
+	    	bottom: 0;
+	    	overflow: hidden;
+	    	background-color: #fff;
+	    	color: #000;
+	    }
+
+	    &:before {
+	    	left: 8px;
+	    	text-shadow: 2 0 #00ffea;
+	    	animation: effect 3s infinite linear;
+	    }
+	    &:after {
+	    	left: 4px;
+	    	text-shadow: -2 0 #00ffea;
+	    	animation: effect 2s infinite linear;
+	    }
+	    @-webkit-keyframes effect {
+	    	0% {
+	    		clip: rect(55px, 9999px, 56px, 0);
+	    	}
+	    	5% {
+	    		clip: rect(47px, 9999px, 30px, 0);
+	    	}
+	    	10% {
+	    		clip: rect(33px, 9999px, 36px, 0);
+	    	}
+	    	15% {
+	    		clip: rect(35px, 9999px, 9px, 0);
+	    	}
+	    	20% {
+	    		clip: rect(63px, 9999px, 59px, 0);
+	    	}
+	    	25% {
+	    		clip: rect(96px, 9999px, 98px, 0);
+	    	}
+	    	30% {
+	    		clip: rect(48px, 9999px, 77px, 0);
+	    	}
+	    	35% {
+	    		clip: rect(50px, 9999px, 34px, 0);
+	    	}
+	    	40% {
+	    		clip: rect(60px, 9999px, 72px, 0);
+	    	}
+	    	45% {
+	    		clip: rect(10px, 9999px, 81px, 0);
+	    	}
+	    	50% {
+	    		clip: rect(2px, 9999px, 60px, 0);
+	    	}
+	    	55% {
+	    		clip: rect(23px, 9999px, 89px, 0);
+	    	}
+	    	60% {
+	    		clip: rect(76px, 9999px, 91px, 0);
+	    	}
+	    	65% {
+	    		clip: rect(62px, 9999px, 30px, 0);
+	    	}
+	    	70% {
+	    		clip: rect(60px, 9999px, 73px, 0);
+	    	}
+	    	75% {
+	    		clip: rect(60px, 9999px, 87px, 0);
+	    	}
+	    	80% {
+	    		clip: rect(2px, 9999px, 14px, 0);
+	    	}
+	    	85% {
+	    		clip: rect(28px, 9999px, 87px, 0);
+	    	}
+	    	90% {
+	    		clip: rect(73px, 9999px, 50px, 0);
+	    	}
+	    	95% {
+	    		clip: rect(79px, 9999px, 70px, 0);
+	    	}
+	    	100% {
+	    		clip: rect(17px, 9999px, 79px, 0);
+	    	}
+	    }
+	}
+}
+
+#home {
+	background-color: #FFCA00;
+
+	#home__logo {
+		text-align: right;
+
+		@media screen and (max-width: 768px) {
+		    text-align: center;
+		}
+	}
+
+	#arrow-down {
+		svg {
+			overflow: hidden;
+		    position: relative;
+		    top: -0.5px;
+		    margin: 0 auto;
+		    left: 47%;
+		    width: 30%;
+		    max-width: 55px;
+		}
+
+		&__container {
+		    position: absolute;
+		    height: 150px;
+		    bottom: 0px;
+		}
+	}
+
+	.home {
+
+		&__container {
+		    display: table;
+	    	width: 100%;
+	    	height: 80%;
+
+	    	@media screen and (max-width: 768px) {
+			    text-align: center;
+			    height: auto;
+			}
+
+		}
+		&__section {
+		    height: 100%;
+		    width: 50%;
+		    vertical-align: middle;
+		    display: table-cell;
+		    float: none;
+		    position: relative;
+		    padding:10px;
+	    	
+	    	@media screen and (max-width: 768px) {
+			    width: 100%;
+			    display: block;
+			    height: auto;
+			}
+		}
+	}
+	#arrow-down {
+		margin-top: 70px;
+	}
+}
+
+
+#project {
+
+	.project {
+		padding-bottom: 100px;
+
+		&__section {
+		    height: 100%;
+		    padding:10px;
+    	}
+
+    	&__detail {
+	    	text-align: right;
+    		margin-top: 100px;
+		    
+		    &--section {
+		    	text-transform: uppercase;
+		    	margin-bottom: 0px;
+		    	font-weight: bold;
+		    	font-size: 20px;
+		    }
+		    &--name {
+		    	color: #bbb;
+			    font-size: 45px;
+			    line-height: 45px;
+			    margin-bottom: 40px;
+		    }
+		    &--desc {
+		    	strong {
+		    		border-bottom: red 1px solid;
+    				padding-bottom: 1px;
+		    	}
+		    }
+		    &--link {
+	    	    text-transform: uppercase;
+			    margin-top: 40px;
+			    text-decoration: underline;
+			    letter-spacing: 1px;
+			    font-weight: bold;
+		    }
+		    &.left{
+		    	text-align: left;
+		    }
+		}
+		&__img {
+		    overflow: hidden;
+		    min-height: 200px;
+
+		    img {
+		    	width: 100%;
+		    }
+	    }
+	}
+}
+
+#footer {
+	background-color: #f9f9f9;
+	padding: 100px;
+
+	@media screen and (max-width: 768px) {
+	    padding: 100px 0px;
+	}
+}
+#footer ul {
+	padding: 0px;
+	list-style: none;
+}
+#footer li {
+	float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#footer .s1 {
+	font-weight: bold;
+    font-size: 24px;
+    line-height: 12px;
+    letter-spacing: -2px;
+}
+#footer .s2 {
+	font-style: italic;
+}
+
+#footer .s3 {
+	font-weight: bold;
+    font-size: 26px;
+}
+#footer .contact {
+	font-family: 'Gaegu', cursive;
+	font-size: 33px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 36px;
+
+    @media screen and (max-width: 768px) {
+	    font-size: 23px;
+	}
+}
+#footer .cv {
+	font-size: 20px;
+}
+
+
+
+
+
+
+
